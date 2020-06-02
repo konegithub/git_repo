@@ -1,0 +1,17 @@
+my-snowflake-db:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: [vs70616.southeast-asia.azure]
+
+      # User/password auth
+      user: [hari1234]
+      password: [Hari@1234]
+
+      role: [transformer]
+      database: [CG_DEMO_SG]
+      warehouse: [CG_WH]
+      schema: [PUBLIC]
+      threads: [1 or more]
+      client_session_keep_alive: False
